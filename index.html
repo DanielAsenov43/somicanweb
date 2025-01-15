@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It works!</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>INICIO - Somican - Sociedad Micológica Cántabra</title>
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Styles/header-style.css">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./Styles/carousel-style.css">
+    <link rel="stylesheet" href="./Styles/cookies-style.css">
+    <!-- JS -->
+    <script defer src="./Scripts/cookies-script.js"></script>
 </head>
+<!-- HEADER -->
+<header>
+    <div id="top-banner">
+        <span>SOCIEDAD MICOLÓGICA CÁNTABRA</span>
+    </div>
+    <div id="top-section">
+        <img src="./Images/SomicanTopLogo.png" alt="Somican.png">
+        <button id="top-menu-button">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </button>
+    </div>
+</header>
 <body>
-    <h1>Title</h1>
-    <span>Test</span>
+    <div id="scrolling-container">
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+    </div>
+    <div id="description-container">
+        <span class="title">SOMICAN</span>
+        <span class="description">Sociedad Micológica Cántabra, fundada en los años 80.</span>
+    </div>
 </body>
+<!-- COOKIES -->
+<section>
+    <div id="cookies-container">
+        <div class="row-title">
+            <span>Gestionar el consentimiento de las cookies</span>
+            <svg viewBox="0 0 352 512" id="cookies-close-svg">
+                <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+            </svg>
+        </div>
+        
+        <div class="row-description">
+            <span>Esta página web utiliza cookies propias y de terceros para fines analíticos y mostrarle publicidad relacionada con sus preferencias en base a un perfil elaborado a partir de tus datos de navegación. Si desea aceptar todas las cookies debe pulsar <b>“Aceptar”</b>, o puede pulsar <b>“Denegar”</b> para rechazarlas o configurarlas. Para más información puede visitar nuestra <b>Política de Cookies</b></span>
+        </div>
+        <div id="cookies-row-buttons">
+            <button class="button-accept">Aceptar</button>
+            <button class="button-reject">Degenar</button>
+            <button class="button-preferences">Ver preferencias</button>
+        </div>
+        <div class="row-policy">
+            <a href="https://somican.com/cookies/">Política de cookies</a>
+            <a href="https://somican.com/politica-de-privacidad/">Política de privacidad</a>
+            <a href="https://somican.com/aviso-legal/">Aviso legal</a>
+        </div>
+    </div>
+</section>
 </html>

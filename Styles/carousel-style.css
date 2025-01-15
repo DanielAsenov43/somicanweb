@@ -1,0 +1,10 @@
+#scrolling-container {
+    display: flex;
+}
+
+#scrolling-container .placeholder {
+    width: 33%;
+    height: 400px;
+    background-color: lightblue;
+    margin: 0px 2px 0px 2px;
+}
