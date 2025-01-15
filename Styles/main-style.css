@@ -1,5 +1,9 @@
+/* Carousel ----------------------- */
 #scrolling-container {
     display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #scrolling-container .placeholder {
@@ -7,4 +11,29 @@
     height: 400px;
     background-color: lightblue;
     margin: 0px 2px 0px 2px;
+}
+
+/* Description section --------------------*/
+#description-container {
+    background-color: rgb(84, 89, 95);
+    height: 373px;
+    display: flex;
+    flex-direction: column;
+}
+
+#description-container .title,  #description-container .subtitle{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    transform: translateY(100px);
+}
+
+#description-container .title {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+#description-container .subtitle {
+    font-size: 26px;
+    font-weight: 300;
 }
