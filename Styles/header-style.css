@@ -61,7 +61,6 @@ header *::selection {
 }
 
 #tabs > .tab {
-    border: red 1px solid;
     height: 40px;
     margin-left: 50px;
 }
@@ -113,4 +112,31 @@ header *::selection {
 #top-menu-button:hover .hamburger {
     transition-duration: 0.25s;
     border-bottom: #fff 1px solid;
+}
+
+/* SOCIAL MEDIA ======================== */
+
+#social-media {
+    display: flex;
+}
+
+#social-media .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+#social-media .red {
+    background-color: rgba(205, 32, 31);
+}
+
+#social-media .blue {
+    background-color: rgba(59, 89, 152);
+}
+
+#social-media .circle img {
+    width: 18px;
+    height: 18px;
+    position: inherit;
+    transform: translate(6px, 6px);
 }
