@@ -1,4 +1,4 @@
-/* FadeIn animation on scroll
+/* FadeIn animation on scroll =======================
 https://stackoverflow.com/questions/27462306/css3-animate-elements-if-visible-in-viewport-page-scroll */
 
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         const animatedBoxes = document.getElementsByClassName("fadeInElement");
         const windowOffsetTop = window.innerHeight + window.scrollY;
 
-        Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
+        animatedBoxes.forEach(animatedBox => {
             const animatedBoxOffsetTop = animatedBox.offsetTop;
 
             if (windowOffsetTop >= animatedBoxOffsetTop) {

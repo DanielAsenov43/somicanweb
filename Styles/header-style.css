@@ -18,6 +18,7 @@ header *::selection {
     color: #fff;
     font-size: 19px;
     font-weight: 300;
+    text-wrap: nowrap;
 }
 
 #top-banner span {
@@ -37,11 +38,53 @@ header *::selection {
 #top-section img {
     width: 230px;
     height: 70px;
-    padding: 15px;
-    margin-left: 250px;
+    position: absolute;
+    left: 10%;
+    top: 70px;
 }
 
-/* BANNER BUTTON */
+/* BANNER TABS/BUTTON =========================================== */
+@media screen and (max-width: 1024px) { /* Hide tabs */
+    #tabs { visibility: hidden; }
+}
+@media screen and (min-width: 1024px) { /* Show button */
+    #top-menu-button { display: none; }
+}
+
+#tabs {
+    display: flex;
+    user-select: none;
+    position: absolute;
+    left: 50%;
+    top: 110px;
+    transform: translate(-35%, -50%);
+}
+
+#tabs > .tab {
+    border: red 1px solid;
+    height: 40px;
+    margin-left: 50px;
+}
+
+#tabs .tab .text {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(51, 65, 85);
+    text-wrap: nowrap;
+}
+
+#tabs .tab .arrow {
+    position: absolute;
+    font-size: 25px;
+    transform: translate(5px, 3px);
+}
+
+#tabs .tab:hover * {
+    color: var(--header-color);
+    cursor: pointer;
+}
+
 #top-menu-button {
     width: 45px;
     height: 30px;
