@@ -2,3 +2,18 @@ header, body {
     font-family: "Titillium Web", sans-serif;
     margin: 0px;
 }
+
+/* Animations ======================= */
+
+@keyframes fade-in {
+    0% {
+      -webkit-transform: translateY(150px);
+              transform: translateY(150px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+      opacity: 1;
+    }
+  }
