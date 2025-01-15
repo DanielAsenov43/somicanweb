@@ -118,12 +118,16 @@ header *::selection {
 
 #social-media {
     display: flex;
+    position: absolute;
+    right: 17%;
+    top: 90px;
 }
 
 #social-media .circle {
     width: 30px;
     height: 30px;
     border-radius: 15px;
+    margin-right: 5px;
 }
 
 #social-media .red {
