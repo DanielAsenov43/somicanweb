@@ -12,7 +12,7 @@ header *::selection {
 /* BANNER - SUPERIOR =================================== */
 #top-banner {
     width: 100%;
-    height: 45px;
+    height: 43.75px;
     text-align: center;
     background-color: var(--red-color);
     color: #fff;
@@ -24,7 +24,7 @@ header *::selection {
 #top-banner span {
     position: absolute;
     left: 50%;
-    top: 10px;
+    top: 8px;
     transform: translateX(-50%);
 }
 
@@ -116,10 +116,14 @@ header *::selection {
 
 /* SOCIAL MEDIA ======================== */
 
+@media screen and (max-width: 1200px) { /* Hide tabs */
+    #social-media { visibility: hidden; }
+}
+
 #social-media {
     display: flex;
     position: absolute;
-    right: 17%;
+    right: 10%;
     top: 90px;
 }
 
