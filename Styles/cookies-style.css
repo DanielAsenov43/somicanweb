@@ -18,74 +18,71 @@
     bottom: 0%;
     left: 50%;
     transform: translateX(-50%);
-}
 
-#cookies-container::selection {
-    background-color: var(--red-color-2);
-    color: #fff;
-}
+    ::selection {
+        background-color: var(--red-color-2);
+        color: #fff;
+    }
 
-/* TÍTULO ===================================================== */
-#cookies-container .row-title {
-    text-align: center;
-    padding: 20px;
-    font-size: 15px;
-}
+    .row-title {
+        text-align: center;
+        padding: 20px;
+        font-size: 15px;
+    }
 
-/* DESCRIPCIÓN ===================================================== */
-#cookies-container .row-description {
-    font-size: 12px;
-    line-height: 18px;
-    margin: 0px 20px 20px 20px;
-}
+    .row-description {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0px 20px 20px 20px;
+    }
 
-/* ICONO PARA CERRAR ===================================================== */
-#cookies-container #cookies-close-svg {
-    position: absolute;
-    color: rgb(31, 31, 31);
-    width: 20px;
-    height: 20px;
-    transform: translate(65px, 0px);
-}
+    #cookies-close-svg {
+        position: absolute;
+        color: rgb(31, 31, 31);
+        width: 20px;
+        height: 20px;
+        transform: translate(65px, 0px);
+    }
 
-#cookies-container #cookies-close-svg:hover { cursor: pointer; }
+    #cookies-close-svg:hover { cursor: pointer; }
 
-/* BOTONES ===================================================== */
-#cookies-container #cookies-row-buttons { text-align: center; }
+    #cookies-row-buttons { 
+        text-align: center;
+        
+        * {
+            font-size: 0.9rem;
+            width: 140px;
+            height: 50px;
+            margin: 0px 4px 0px 4px;
+            border: none;
+            border-radius: 5px;
+            background-color: var(--default-button-color);
+        }
 
-#cookies-container #cookies-row-buttons * {
-    font-size: 0.9rem;
-    width: 140px;
-    height: 50px;
-    margin: 0px 4px 0px 4px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--default-button-color);
-}
+        .button-accept {
+            background-color: var(--red-color);
+            color: #fff;
+        }
 
-#cookies-container #cookies-row-buttons .button-accept {
-    background-color: var(--red-color);
-    color: #fff;
-}
+        .button-accept:hover {
+            cursor: pointer;
+        }
 
-#cookies-container #cookies-row-buttons *:not(.button-accept):hover {
-    cursor: pointer;
-    background-color: var(--default-button-color);
-}
+        *:not(.button-accept):hover {
+            cursor: pointer;
+            background-color: var(--default-button-color);
+        }
+    }
 
-#cookies-container #cookies-row-buttons .button-accept:hover {
-    cursor: pointer;
-}
+    .row-policy {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 11px;
+        margin: 15px;
 
-/* ENLACES POLÍTICA ===================================================== */
-#cookies-container .row-policy {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 11px;
-    margin: 15px;
-}
-
-#cookies-container .row-policy * {
-    color: var(--red-color-2);
-    margin: 0px 4px 0px 4px;
+        * {
+            color: var(--red-color-2);
+            margin: 0px 4px 0px 4px;
+        }
+    }
 }

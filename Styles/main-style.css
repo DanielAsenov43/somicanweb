@@ -4,13 +4,13 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-}
 
-#scrolling-container .placeholder {
-    width: 33%;
-    height: 400px;
-    background-color: lightblue;
-    margin: 0px 2px 0px 2px;
+    .placeholder {
+        width: 33%;
+        height: 400px;
+        background-color: lightblue;
+        margin: 0px 2px 0px 2px;
+    }
 }
 
 /* Description section -------------------- */
@@ -19,24 +19,24 @@
     height: 373px;
     display: flex;
     flex-direction: column;
-}
 
-#description-container .title,  #description-container .subtitle{
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    transform: translateY(100px);
-    animation: fade-in 1.2s ease-out;
-}
+    .title, .subtitle {
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        transform: translateY(100px);
+        animation: fade-in 1.2s ease-out;
+    }
 
-#description-container .title {
-    font-size: 64px;
-    font-weight: 600;
-}
+    .title {
+        font-size: 64px;
+        font-weight: 600;
+    }
 
-#description-container .subtitle {
-    font-size: 26px;
-    font-weight: 300;
+    .subtitle {
+        font-size: 26px;
+        font-weight: 300;
+    }
 }
 
 /* Other links below ---------------- */

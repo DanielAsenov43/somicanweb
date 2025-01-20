@@ -19,13 +19,13 @@ header *::selection {
     font-size: 19px;
     font-weight: 300;
     text-wrap: nowrap;
-}
 
-#top-banner span {
-    position: absolute;
-    left: 50%;
-    top: 8px;
-    transform: translateX(-50%);
+    span {
+        position: absolute;
+        left: 50%;
+        top: 8px;
+        transform: translateX(-50%);
+     }
 }
 
 /* BANNER - INFERIOR =================================== */
@@ -33,14 +33,14 @@ header *::selection {
     display: flex;
     height: 100px;
     margin-bottom: 45px;
-}
 
-#top-section img {
-    width: 230px;
-    height: 70px;
-    position: absolute;
-    left: 10%;
-    top: 70px;
+    img {
+        width: 230px;
+        height: 70px;
+        position: absolute;
+        left: 10%;
+        top: 70px;
+    }
 }
 
 /* BANNER TABS/BUTTON =========================================== */
@@ -58,30 +58,32 @@ header *::selection {
     left: 50%;
     top: 110px;
     transform: translate(-35%, -50%);
-}
 
-#tabs > .tab {
-    height: 40px;
-    margin-left: 50px;
-}
+    > .tab {
+        height: 40px;
+        margin-left: 50px;
+    }
 
-#tabs .tab .text {
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: rgb(51, 65, 85);
-    text-wrap: nowrap;
-}
+    .tab {
+        .text {
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: rgb(51, 65, 85);
+            text-wrap: nowrap;
+        }
 
-#tabs .tab .arrow {
-    position: absolute;
-    font-size: 25px;
-    transform: translate(5px, 3px);
-}
+        .arrow {
+            position: absolute;
+            font-size: 25px;
+            transform: translate(5px, 3px);
+        }
+    }
 
-#tabs .tab:hover * {
-    color: var(--header-color);
-    cursor: pointer;
+    .tab:hover * {
+        color: var(--header-color);
+        cursor: pointer;
+    }
 }
 
 #top-menu-button {
@@ -94,24 +96,24 @@ header *::selection {
     position: absolute;
     right: 20px;
     top: 80px;
-}
 
-#top-menu-button .hamburger {
-    width: 26px;
-    height: 5px;
-    transform: translateY(-6px);
-    border-bottom: var(--selection-color) 1px solid;
+    .hamburger {
+        width: 26px;
+        height: 5px;
+        transform: translateY(-6px);
+        border-bottom: var(--selection-color) 1px solid;
+    }
 }
 
 #top-menu-button:hover {
     transition-duration: 0.25s;
     background-color: var(--selection-color);
     cursor: pointer;
-}
 
-#top-menu-button:hover .hamburger {
-    transition-duration: 0.25s;
-    border-bottom: #fff 1px solid;
+    .hamburger {
+        transition-duration: 0.25s;
+        border-bottom: #fff 1px solid;
+    }
 }
 
 /* SOCIAL MEDIA ======================== */
@@ -125,26 +127,22 @@ header *::selection {
     position: absolute;
     right: 10%;
     top: 90px;
-}
 
-#social-media .circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    margin-right: 5px;
-}
+    .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        margin-right: 5px;
 
-#social-media .red {
-    background-color: rgba(205, 32, 31);
-}
+        img {
+            width: 18px;
+            height: 18px;
+            position: inherit;
+            transform: translate(6px, 6px);
+        }
+    }
 
-#social-media .blue {
-    background-color: rgba(59, 89, 152);
-}
+    .red { background-color: rgb(205, 32, 31); }
 
-#social-media .circle img {
-    width: 18px;
-    height: 18px;
-    position: inherit;
-    transform: translate(6px, 6px);
+    .blue { background-color: rgb(59, 89, 152); }
 }
