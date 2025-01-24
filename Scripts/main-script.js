@@ -1,3 +1,14 @@
+// Variables
+const slider = document.getElementById("carousel-container");
+const SCROLL_SPEED = 2;
+let isDown = false;
+let startX, scrollLeft;
+
+
+for(let element of document.getElementsByClassName("carousel-image")) {
+    element.setAttribute("draggable", false);
+}
+
 /* FadeIn animation on scroll =======================
 https://stackoverflow.com/questions/27462306/css3-animate-elements-if-visible-in-viewport-page-scroll */
 
@@ -22,3 +33,26 @@ function addClass(element, className) {
         element.className += " " + className;
     }
 }
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * SCROLL_SPEED;
+  slider.scrollLeft = scrollLeft - walk;
+});
+

@@ -3,6 +3,9 @@ header {
     --red-color: rgb(232, 0, 0);
     --selection-color: rgb(209, 4, 4);
     --header-color: rgb(201, 11, 11);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 header *::selection {
